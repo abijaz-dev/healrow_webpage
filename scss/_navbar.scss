@@ -1,0 +1,20 @@
+.header {
+    background: $light-color; 
+    .navbar {
+        @include set-display(row, space-between, center); 
+         
+        &-logo {
+            font-family: $main_font;
+            color: $secondary-color;
+        }
+        &-items {
+            ul {
+                @include set-display(row, space-between, center);
+                li a{
+                    padding: 1rem;
+                    color: $dark-color; 
+                }
+            } 
+        }
+    }
+}  
