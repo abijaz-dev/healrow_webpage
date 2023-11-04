@@ -1,7 +1,7 @@
 
 ## Screenshots
 
-![App Screenshot](dist/img/web_structure.pdf)
+![App Screenshot](dist/img/web_structure_page-0001.jpg)
 
 
 # HEALROW
