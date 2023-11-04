@@ -4,28 +4,221 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CASCADING STYLE SHEET -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>HealRow - A campaign to grow healthy life</title>
   </head>
-  <body> 
-    <!-- HEADER --> 
+  <body>
+    <!-- HEADER -->
     <header class="header p">
       <nav class="navbar">
         <a href="#" class="navbar-logo"><h1 class="x-large">HEALROW</h1></a>
         <div class="navbar-items">
-            <ul class="sm">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#doctors">Doctors</a></li>
-                <li><a href="#appointment">Appointment</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
+          <ul class="sm">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
         </div>
         <div class="navbar-buttons">
-            <a href="#" class="btn btn-primary">Sign Up</a>
-            <a href="#" class="btn btn-primary">Contact Us</a>
+          <a href="#" class="btn btn-primary">Sign Up</a>
+          <a href="#" class="btn btn-primary">Contact Us</a>
         </div>
       </nav>
     </header>
 
+    <!-- SHOWCASE -->
+    <main class="showcase p-2">
+      <div class="container">
+        <div class="showcase_display">
+          <div class="hero-text">
+            <h2 class="large">CHOOSE THE RIGHT DOCTOR</h2>
+            <p class="lead my-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              magnam earum qui tempore modi. Dolore quo quisquam delectus, alias
+              beatae repellat labore dolor? Vel, quas?
+            </p>
+            <a href="$" class="btn btn-secondary my-1">Book an appointment</a>
+          </div>
+          <!-- IMAGE -->
+          <div class="hero-img">
+            <img src="dist/img/doctor.png" alt="showcase_image" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- DOCTORS ROW CARDS -->
+    <section class="card p-2" id="doctor">
+      <div class="container">
+        <div class="card-heading">
+          <h2 class="large">Our <span>Doctors</span></h2>
+          <p class="lead my-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            ipsam qui corrupti quis placeat, cum alias similique at repellendus
+            hic asperiores nam minus voluptatem expedita veritatis nostrum esse
+            eaque rerum.
+          </p>
+        </div>
+        <!-- CARDS -->
+        <div class="card-row">
+          <!-- CARD#1 -->
+          <div class="card-col">
+            <img src="dist/doctor/1.jpg" alt="dr_peter" class="doc_img" />
+            <section class="info">
+              <h2 class="info-title">Dr. Peter</h2>
+              <p class="lead">
+                A wise and polite surgen in one of our staff members, pretty
+                expert in field and panctual.
+              </p>
+            </section>
+            <div class="social">
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- CARD#2 -->
+          <div class="card-col">
+            <img src="dist/doctor/2.jpg" alt="dr_peter" class="doc_img" />
+            <section class="info">
+              <h2 class="info-title">Dr. Molly</h2>
+              <p class="lead">
+                One of our honourable female doctor whose have plenty of
+                experience to suggest the healthy diet.
+              </p>
+            </section>
+            <div class="social">
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- CARD#3 -->
+          <div class="card-col">
+            <img src="dist/doctor/3.jpg" alt="dr_peter" class="doc_img" />
+            <section class="info">
+              <h2 class="info-title">Dr. Joe</h2>
+              <p class="lead">
+                He serve the patient with kindness who's having certain kinds of
+                disease in normal routine.
+              </p>
+            </section>
+            <div class="social">
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- CARD#4 -->
+          <div class="card-col">
+            <img src="dist/doctor/4.jpg" alt="dr_peter" class="doc_img" />
+            <section class="info">
+              <h2 class="info-title">Dr. Bruce</h2>
+              <p class="lead">
+                Certified operator of critical cases, espacially for family
+                members. An wise and trusted person.
+              </p>
+            </section>
+            <div class="social">
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social_links"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT FORM -->
+    <section class="appointment p-2" id="appt">
+      <div class="container">
+        <form action="#" class="form">
+          <h2 class="large my-1">Book an appointment</h2>
+
+          <div class="form-row">
+            <div class="form-col">
+              <label for="name" class="form-label">Enter your name</label>
+              <input type="text" class="name" required />
+            </div>
+
+            <div class="form-col">
+              <label for="email" class="form-label">Enter your e-mail</label>
+              <input type="email" class="email" required />
+            </div>
+
+            <div class="form-col">
+              <label for="number" class="form-label"
+                >Enter your phone number</label
+              >
+              <input type="text" class="number" required />
+            </div>
+
+            <div class="form-col">
+              <label for="doctor_list" class="doctor">Select the doctor</label>
+              <select class="doctor_list" required>
+                <option value="">None</option>
+                <option value="Dr. John">Dr. John</option>
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Alecia">Dr. Alecia</option>
+              </select>
+            </div>
+
+            <div class="form-col">
+              <label for="department" class="form-label"
+                >Select the department</label
+              >
+              <select class="dept_list">
+                <option value="">None</option>
+                <option value="eye_opt">Eye Opticalization</option>
+                <option value="neuro">Neurological</option>
+                <option value="derma_dept">Dermatological</option>
+              </select>
+            </div>
+
+            <div class="form-col">
+              <label for="date" class="form-label">Date Available</label>
+              <input type="date" required />
+            </div>
+
+            <div class="form-col">
+              <button class="btn btn-primary sm my-2">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

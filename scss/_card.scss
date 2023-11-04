@@ -1,0 +1,42 @@
+.card {
+  background: $light-color;
+  text-align: center;
+  // HEADING
+  &-heading {
+    span {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+
+  // CARD ROWS
+  &-row {
+    @include set-display(row, space-evenly, center);
+
+    .card-col {
+      box-shadow: 0rem 0rem 1.5rem 0rem lighten($secondary-color, 30%);
+      // @include set-display(column, space-between, center);
+      flex-basis: 18em;
+      border-radius: 18px;
+      padding: 1.5rem;
+      margin: 1.5rem;
+      .doc_img {
+        width: 180px;
+        height: 12rem;
+      }
+      .info {
+        padding: 1rem;
+      }
+      .social {
+        font-size: 1.2rem;
+        &_links {
+          margin: 1rem;
+          color: $secondary-color;
+        }
+        &_links:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
-@import "utilities.scss"; 
-@import "config.scss";
 @import "variables.scss"; 
-@import "navbar.scss"; 
+@import "config.scss";
+@import "utilities.scss";  
 
 * {
     padding:0;
@@ -16,4 +15,15 @@ li {
 }
 body {
     font-family: $font_stack;  
+    font-size: 16px;
+    line-height: 1.5;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@import "navbar.scss"; 
+@import "showcase.scss";
+@import "card.scss";
+@import "form.scss";

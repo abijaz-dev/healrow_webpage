@@ -1,44 +1,56 @@
+// Container
+.container {
+    padding:  2rem;
+    margin: 0 auto;
+    max-width: 1100;
+    overflow: hidden;
+}
+
 // Paddings.
-.p {
-    padding: 0.5rem;
-}
-.p-1 {
-    padding: 1rem;
-}
-.p-2 {
-    padding: 2rem;
-}
-.p-3 {
-    padding: 3rem;
-}
+.p {padding: 0.5rem;}
+.p-1 {padding: 1rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
 
 // Margins.
-.m {
-    margin: 0.5rem;
-}
-.m-1 {
-    margin: 1rem;
-}
-.m-2 {
-    margin: 2rem;
-}
-.m-3 {
-    margin: 3rem;
-}
+.m {margin: 0.5rem;}
+.m-1 {margin: 1rem;}
+.m-2 {margin: 2rem;}
+.m-3 {margin: 3rem;}
+.my {padding: 0.5rem 0;}
+.my-1 {padding: 1rem 0;}
 
 // Text Sizes
-.x-large {
-    font-size: 2.5rem;
-}
+.x-large {font-size: 2.5rem;}
+.large {font-size: 2rem;}
+.md {font-size: 1.5rem;}
+.sm {font-size: 1rem;}
+.lead {font-size: 1rem;}
 
-.large {
-    font-size: 2rem;
-}
-
-.md {
-    font-size: 1.5rem;
-}
-
-.sm {
-    font-size: 1rem;
+// Buttons
+.btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    color: $light-color;
+    text-align: center; 
+    padding: 0.7rem;
+    border: none;
+    cursor: pointer;
+    &-primary {
+        background: $primary-color;
+        color: $light-color;
+    }
+    &-primary:hover {
+        background-color: $dark-color;
+        transition: all ease-in 0.5s;
+    }
+    &-secondary {
+        background: $secondary-color;
+        color: $light-color;
+    }
+    &-secondary:hover {
+        background-color: $primary-color;
+        transition: all ease-in 0.5s;
+    }
 }

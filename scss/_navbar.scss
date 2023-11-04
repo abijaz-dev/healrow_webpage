@@ -1,20 +1,27 @@
 .header {
-    background: $light-color; 
-    .navbar {
-        @include set-display(row, space-between, center); 
-         
-        &-logo {
-            font-family: $main_font;
-            color: $secondary-color;
-        }
-        &-items {
-            ul {
-                @include set-display(row, space-between, center);
-                li a{
-                    padding: 1rem;
-                    color: $dark-color; 
-                }
-            } 
-        }
+  background: $light-color;
+  .navbar {
+    @include set-display(row, space-between, center);
+    // LOGO STYLE
+    &-logo {
+      font-family: $main_font;
+      color: $secondary-color;
     }
-}  
+    // NAV ITEMS
+    &-items {
+      ul {
+        @include set-display(row, space-between, center);
+        li {
+          padding: 0.5rem;
+          a {
+            color: $dark-color;
+            &:hover {
+              color: $primary-color;
+              transition: all ease-in 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
