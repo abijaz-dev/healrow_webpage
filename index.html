@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HealRow is an hospital based system web app where patinets could register their appointment and inquiry.">
     <!-- CASCADING STYLE SHEET -->
     <link rel="stylesheet" href="css/style.min.css" />
-    <!-- FONT AWESOME CDN -->
+    <!-- FONT-AWESOME CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -19,18 +20,16 @@
     <!-- HEADER -->
     <header class="header p">
       <nav class="navbar">
-        <a href="#" class="navbar-logo"><h1 class="x-large">HEALROW</h1></a>
-        <div class="navbar-items">
-          <ul class="sm">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li><a href="#appointment">Appointment</a></li>
-            <li><a href="#about">About Us</a></li>
-          </ul>
-        </div>
+        <a href="index.html" class="navbar-logo x-large">HEALROW</a>
+        <ul class="navbar-items sm">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#doctor">Doctors</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
         <div class="navbar-buttons">
           <a href="#" class="btn btn-primary">Sign Up</a>
-          <a href="#" class="btn btn-primary">Contact Us</a>
+          <a href="#contact" class="btn btn-primary">Contact Us</a>
         </div>
       </nav>
     </header>
@@ -38,7 +37,7 @@
     <!-- SHOWCASE -->
     <main class="showcase p-2">
       <div class="container">
-        <div class="showcase_display">
+        <div class="showcase-display">
           <div class="hero-text">
             <h2 class="large">CHOOSE THE RIGHT DOCTOR</h2>
             <p class="lead my-1">
@@ -46,9 +45,10 @@
               magnam earum qui tempore modi. Dolore quo quisquam delectus, alias
               beatae repellat labore dolor? Vel, quas?
             </p>
-            <a href="$" class="btn btn-secondary my-1">Book an appointment</a>
+            <a href="#appointment" class="btn btn-secondary"
+              >Book an appointment</a
+            >
           </div>
-          <!-- IMAGE -->
           <div class="hero-img">
             <img src="dist/img/doctor.png" alt="showcase_image" />
           </div>
@@ -56,10 +56,10 @@
       </div>
     </main>
 
-    <!-- DOCTORS ROW CARDS -->
-    <section class="card p-2" id="doctor">
+    <!-- DOCTORS CARDS ROW -->
+    <section class="cards p-2" id="doctor">
       <div class="container">
-        <div class="card-heading">
+        <div class="cards-heading">
           <h2 class="large">Our <span>Doctors</span></h2>
           <p class="lead my-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
@@ -69,12 +69,12 @@
           </p>
         </div>
         <!-- CARDS -->
-        <div class="card-row">
+        <div class="cards-row">
           <!-- CARD#1 -->
           <div class="card-col">
             <img src="dist/doctor/1.jpg" alt="dr_peter" class="doc_img" />
-            <section class="info">
-              <h2 class="info-title">Dr. Peter</h2>
+            <section class="doc-intro">
+              <h2 class="title">Dr. Peter</h2>
               <p class="lead">
                 A wise and polite surgen in one of our staff members, pretty
                 expert in field and panctual.
@@ -95,8 +95,8 @@
           <!-- CARD#2 -->
           <div class="card-col">
             <img src="dist/doctor/2.jpg" alt="dr_peter" class="doc_img" />
-            <section class="info">
-              <h2 class="info-title">Dr. Molly</h2>
+            <section class="doc-intro">
+              <h2 class="title">Dr. Molly</h2>
               <p class="lead">
                 One of our honourable female doctor whose have plenty of
                 experience to suggest the healthy diet.
@@ -117,8 +117,8 @@
           <!-- CARD#3 -->
           <div class="card-col">
             <img src="dist/doctor/3.jpg" alt="dr_peter" class="doc_img" />
-            <section class="info">
-              <h2 class="info-title">Dr. Joe</h2>
+            <section class="doc-intro">
+              <h2 class="title">Dr. Joe</h2>
               <p class="lead">
                 He serve the patient with kindness who's having certain kinds of
                 disease in normal routine.
@@ -139,8 +139,8 @@
           <!-- CARD#4 -->
           <div class="card-col">
             <img src="dist/doctor/4.jpg" alt="dr_peter" class="doc_img" />
-            <section class="info">
-              <h2 class="info-title">Dr. Bruce</h2>
+            <section class="doc-intro">
+              <h2 class="title">Dr. Bruce</h2>
               <p class="lead">
                 Certified operator of critical cases, espacially for family
                 members. An wise and trusted person.
@@ -163,62 +163,164 @@
     </section>
 
     <!-- APPOINTMENT FORM -->
-    <section class="appointment p-2" id="appt">
+    <section class="appointment p-2" id="appointment">
       <div class="container">
-        <form action="#" class="form">
+        <form action="#" class="form appointment-bg">
           <h2 class="large my-1">Book an appointment</h2>
-
           <div class="form-row">
             <div class="form-col">
               <label for="name" class="form-label">Enter your name</label>
-              <input type="text" class="name" required />
+              <input type="text" class="name" name="name" required />
             </div>
-
             <div class="form-col">
               <label for="email" class="form-label">Enter your e-mail</label>
-              <input type="email" class="email" required />
+              <input type="email" class="email" name="email" required />
             </div>
-
             <div class="form-col">
               <label for="number" class="form-label"
                 >Enter your phone number</label
               >
-              <input type="text" class="number" required />
+              <input type="text" class="number" name="number" required />
             </div>
-
             <div class="form-col">
-              <label for="doctor_list" class="doctor">Select the doctor</label>
-              <select class="doctor_list" required>
+              <label for="doctor_list" class="form-label"
+                >Select the doctor</label
+              >
+              <select class="doctor_list" name="doctor_list" required>
                 <option value="">None</option>
                 <option value="Dr. John">Dr. John</option>
                 <option value="Dr. Smith">Dr. Smith</option>
                 <option value="Dr. Alecia">Dr. Alecia</option>
               </select>
             </div>
-
             <div class="form-col">
               <label for="department" class="form-label"
                 >Select the department</label
               >
-              <select class="dept_list">
+              <select class="department" name="department">
                 <option value="">None</option>
                 <option value="eye_opt">Eye Opticalization</option>
                 <option value="neuro">Neurological</option>
                 <option value="derma_dept">Dermatological</option>
               </select>
             </div>
-
             <div class="form-col">
               <label for="date" class="form-label">Date Available</label>
-              <input type="date" required />
+              <input type="date" required name="date" />
             </div>
-
             <div class="form-col">
-              <button class="btn btn-primary sm my-2">Submit</button>
+              <button class="btn btn-primary sm my-1">Submit</button>
             </div>
           </div>
         </form>
       </div>
     </section>
+
+    <!-- ABOUT US -->
+    <section class="about p-2" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="large">About Us</h2>
+            <p class="lead my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              amet vel ipsam laborum corrupti distinctio eos velit, enim
+              quibusdam magnam nobis facere voluptates ducimus aut totam
+              perferendis iusto repudiandae? Sed quasi error explicabo
+              consequatur autem magni facilis temporibus fugit quisquam iure
+              molestiae neque eaque accusantium ex delectus harum obcaecati
+              repellendus voluptas quo architecto, nesciunt ipsam! Minus odio
+              reprehenderit harum possimus.
+            </p>
+            <a href="#" class="read-more-btn btn btn-secondary sm">
+              Read more
+            </a>
+          </div>
+          <div class="about-img p-2">
+            <img src="dist/img/staff.jpg" alt="staff_members" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="contact p-2" id="contact">
+      <div class="container">
+        <h2 class="contact-heading large my-1">Contact Us</h2>
+        <div class="contact-content">
+          <img src="dist/img/contact.png" alt="contact_img" />
+          <form action="#" class="form">
+            <div class="form-row">
+              <div class="form-col">
+                <label for="name" class="form-label">Enter Your Name</label>
+                <input type="text" name="name sm" />
+              </div>
+              <div class="form-col">
+                <label for="email" class="form-label">Enter Your E-mail</label>
+                <input type="email" name="email sm" />
+              </div>
+              <div class="form-col">
+                <label for="message" class="form-label"
+                  >Type Your Message</label
+                >
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  class="sm"
+                  name="message"
+                ></textarea>
+              </div>
+              <div class="form-col">
+                <button class="btn btn-secondary sm">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer p">
+      <div class="container">
+        <div class="footer-content">
+          <div class="newsletter">
+            <h2 class="md">Subscribe for newsletter</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis ut accusantium dolor, dolorum expedita distinctio.
+            </p>
+            <form action="#" class="form newsletter-display">
+              <div class="form-row">
+                <div class="form-col">
+                  <input
+                    type="email"
+                    placeholder="Enter Your E-mail"
+                    class="email"
+                  />
+                </div>
+                <div class="form-col p">
+                  <a class="btn btn-primary sm">Subscribe</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- SOCIAL LINKS -->
+          <div class="copyright">
+            <h2 class="copyright-text sm">
+              &copy; 2023 All Right Reserved. Designed by Colibzo
+            </h2>
+            <div class="social-source md">
+              <a href="#" class="link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>

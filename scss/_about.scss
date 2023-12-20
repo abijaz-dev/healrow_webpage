@@ -1,0 +1,16 @@
+.about {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../dist/img/about.jpg") no-repeat center / cover;
+  color: $light-color;
+  &-content {
+    @include set-display(row, center, center, nowrap);
+    gap: 1.5rem;
+  }
+  &-img {
+    img {
+      border-radius: 3px;
+      border: 10px solid $primary-color;
+      border-style: solid solid none none;
+    }
+  }
+}

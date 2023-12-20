@@ -1,7 +1,8 @@
 // Flexbox.
-@mixin set-display($direction, $content, $items) {
+@mixin set-display($direction, $content, $items, $wrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $content;
     align-items: $items;
+    flex-wrap: $wrap;
 }

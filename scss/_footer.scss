@@ -1,0 +1,32 @@
+.footer {
+  background: linear-gradient(
+    125deg,
+    $primary-color,
+    $light-color,
+    $secondary-color
+  );
+  &-content {
+    @include set-display(row, space-around, center, nowrap);
+  }
+  .newsletter {
+    width: 60%;
+    &-display {
+      @include set-display(row, flex-start, center, nowrap);
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    .social-source {
+      .link i {
+        margin: 1rem;
+        font-weight: 600;
+        color: $primary-color;
+        &:hover {
+          color: $dark-color;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+    }
+  }
+}

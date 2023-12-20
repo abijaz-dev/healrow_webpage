@@ -1,0 +1,12 @@
+.contact {
+    &-heading {
+        text-align: center;
+        text-decoration: $primary-color underline;
+    }
+    &-content {
+        @include set-display(row, space-between, center, nowrap);
+    }
+    img {
+        width: 620px;
+    }
+}

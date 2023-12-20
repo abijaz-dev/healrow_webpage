@@ -1,4 +1,4 @@
-.card {
+.cards {
   background: $light-color;
   text-align: center;
   // HEADING
@@ -11,12 +11,11 @@
 
   // CARD ROWS
   &-row {
-    @include set-display(row, space-evenly, center);
+    @include set-display(row, space-evenly, center, nowrap);
 
     .card-col {
-      box-shadow: 0rem 0rem 1.5rem 0rem lighten($secondary-color, 30%);
-      // @include set-display(column, space-between, center);
-      flex-basis: 18em;
+      box-shadow: 0 0 1.5rem 0 lighten($secondary-color, 30%);
+      // flex-basis: 18em;
       border-radius: 18px;
       padding: 1.5rem;
       margin: 1.5rem;
@@ -24,13 +23,13 @@
         width: 180px;
         height: 12rem;
       }
-      .info {
+      .doc-intro {
         padding: 1rem;
       }
       .social {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         &_links {
-          margin: 1rem;
+          margin: 0.5rem;
           color: $secondary-color;
         }
         &_links:hover {

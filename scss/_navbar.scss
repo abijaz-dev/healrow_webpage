@@ -1,24 +1,22 @@
 .header {
   background: $light-color;
   .navbar {
-    @include set-display(row, space-between, center);
-    // LOGO STYLE
+    @include set-display(row, space-between, center, nowrap);
+    // MAIN LOGO
     &-logo {
       font-family: $main_font;
       color: $secondary-color;
     }
-    // NAV ITEMS
-    &-items {
-      ul {
-        @include set-display(row, space-between, center);
-        li {
-          padding: 0.5rem;
-          a {
-            color: $dark-color;
-            &:hover {
-              color: $primary-color;
-              transition: all ease-in 0.3s;
-            }
+    // NAVBAR ITEMS
+    ul {
+      @include set-display(row, space-between, center, nowrap);
+      li {
+        padding: 0.5rem;
+        a {
+          color: $dark-color;
+          &:hover {
+            color: $primary-color;
+            transition: all ease-in 0.2s;
           }
         }
       }
