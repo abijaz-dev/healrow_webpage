@@ -1,21 +1,20 @@
 .form {
   &-row {
-    @include set-display(row, space-evenly, center, nowrap);
-    flex-wrap: wrap;  
-
-    .form-col {  
-      width: 360px;
-      margin: 0.5rem 0;
-      input,
-      select, textarea {
-        width: 100%;
-        height: 40px;
-        padding: 0.5rem;
-        border-radius: 6px;
-        border: solid $secondary-color 1px;
-        resize: vertical;
-        overflow: auto;
-      }
+    @include set-display(row, space-evenly, center, wrap);
+  }
+  .form-col {
+    width: 360px;
+    margin: 0.5rem 0;
+    input,
+    select,
+    textarea {
+      width: 100%;
+      height: 40px;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: solid $secondary-color 1px;
+      resize: vertical;
+      overflow: auto;
     }
   }
 }

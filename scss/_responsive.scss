@@ -1,0 +1,114 @@
+// FOR TABLE AND LAPTOP SCREEN
+@media screen and (max-width: 976px) {
+  body {
+    font-size: 14px;
+  }
+
+  // Text Sizes
+  .x-large {
+    font-size: 2rem;
+  }
+  .large {
+    font-size: 1.5rem;
+  }
+  .md {
+    font-size: 1rem;
+  }
+  .sm {
+    font-size: 0.8rem;
+  }
+  .lead {
+    font-size: 0.8rem;
+  }
+
+  // FORM
+  .form {
+    .form-col {
+      width: 320px;
+      margin: 0.5rem;
+      input,
+      select,
+      textarea {
+        height: 35px;
+      }
+    }
+  }
+
+  // CARDS
+  .cards {
+    &-row {
+      @include set-display(column, center, center, wrap);
+      .card-col {
+        @include set-display(column, center, center, wrap);
+        .doc_img {
+          width: 120px;
+          height: 8rem;
+        }
+      }
+    }
+  }
+
+  // ABOUT
+  .about {
+    &-content {
+      @include set-display(column, center, center, wrap);
+      text-align: center;
+    }
+    img {
+      width: 60%;
+    }
+  }
+
+  // CONTACT
+  .contact {
+    &-content {
+      @include set-display(column, center, center, wrap);
+    }
+    img {
+      width: 460px;
+    }
+  }
+}
+
+// FOR MOBILE PHONE SCREEN.
+@media screen and (max-width: 790px) {
+  body {
+    font-size: 12px;
+  }
+
+  // HEADER
+  .header {
+    .navbar {
+      @include set-display(column, center, center, wrap);
+    }
+  }
+
+  // SHOWCASE
+  .showcase {
+    &-display {
+      @include set-display(column, center, center, wrap);
+      text-align: center;
+    }
+  }
+
+  // ABOUT
+  .about {
+    img {
+      width: 80%;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    &-content {
+      @include set-display(column, center, center, wrap);
+      text-align: center;
+      .newsletter {
+        width: 100%;
+        &-display {
+          @include set-display(column, center, center, wrap);
+        }
+      }
+    }
+  }
+}

@@ -11,11 +11,12 @@
 
   // CARD ROWS
   &-row {
-    @include set-display(row, space-evenly, center, nowrap);
+    @include set-display(row, space-evenly, center, wrap);
 
     .card-col {
+    @include set-display(row, space-evenly, center, wrap);
       box-shadow: 0 0 1.5rem 0 lighten($secondary-color, 30%);
-      // flex-basis: 18em;
+      flex-basis: 14em;
       border-radius: 18px;
       padding: 1.5rem;
       margin: 1.5rem;

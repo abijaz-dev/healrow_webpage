@@ -4,9 +4,9 @@
         text-decoration: $primary-color underline;
     }
     &-content {
-        @include set-display(row, space-between, center, nowrap);
+        @include set-display(row, space-evenly, center, nowrap);
     }
     img {
-        width: 620px;
+        width: 520px;
     }
 }

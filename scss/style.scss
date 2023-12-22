@@ -16,7 +16,7 @@ li {
 body {
   font-family: $font_stack;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
 }
 img {
   max-width: 100%;
@@ -26,6 +26,7 @@ img {
 .showcase{
   &-display {
       @include set-display(row, space-between, center, nowrap);
+      gap: 1em;
   }
 }
 
@@ -45,3 +46,4 @@ img {
 @import "about.scss";
 @import "contact.scss";
 @import "footer.scss";
+@import "responsive.scss";
